@@ -6,7 +6,7 @@
 
     const startBrain = async ()=>{
             if ($myColl > 6 || $myColl < 1) {$myColl = 1}
-            const myFetch = await fetch('http://localhost:3000/' + 'old/' + ($myColl - 1) )
+            const myFetch = await fetch('https://rez-new-tab-04.onrender.com/' + 'old/' + ($myColl - 1) )
             $myData = await myFetch.json()
             
             //console.log ( $myData )

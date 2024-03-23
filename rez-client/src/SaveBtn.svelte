@@ -2,7 +2,7 @@
 import {myColl, myData, selectedOption } from './myDataStore.js'
 const doSave = async ()=>{
 
-    const res = await fetch('http://localhost:3000/old/'+ $myColl, {
+    const res = await fetch('https://rez-new-tab-04.onrender.com/old/'+ $myColl, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
